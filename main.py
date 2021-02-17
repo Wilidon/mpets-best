@@ -5,11 +5,12 @@ from mpets import MpetsApi
 
 
 async def main():
-    mpets = MpetsApi()
-    await mpets.start()
-    time0 = time.time()
-    await mpets.best("charm", 1)
-    print(time.time() - time0)
+    for i in range(1, 10):
+        mpets = MpetsApi()
+        await mpets.start()
+        time0 = time.time()
+        await mpets.best("charm", i)
+        print(time.time() - time0)
 
 
 if __name__ == '__main__':
