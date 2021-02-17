@@ -1,0 +1,6 @@
+mpets
+python-box
+aiohttp
+beautifulsoup4
+lxml
+pydantic
